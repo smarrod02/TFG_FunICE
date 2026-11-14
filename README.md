@@ -1,4 +1,5 @@
-<<<<<<< HEAD
+Functional data analysis (ICE curves, FPCA, functional clustering) to explain a black-box MLP — Bachelor’s thesis.
+
 # FunICE: análisis funcional de curvas ICE
 
 Código del Trabajo Fin de Grado *Explicabilidad de MLP mediante Análisis de Datos Funcionales* (Sara Martín
@@ -98,7 +99,5 @@ entre 1 y 6 minutos cada uno. Si se ejecuta un único conjunto, puede aumentarse
 Todos los procesos aleatorios usan semillas fijas (definidas en `config.py` y en `comun/`), y las versiones de las
 librerías están fijadas en `environment.yml`, por lo que la ejecución completa reproduce los resultados de la
 memoria.
-=======
-# TFG_FunICE
-Functional data analysis (ICE curves, FPCA, functional clustering) to explain a black-box MLP — Bachelor’s thesis.
->>>>>>> fa674d4cea23186d9a779200f337213093e2160d
+
+
