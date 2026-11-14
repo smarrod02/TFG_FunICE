@@ -1,0 +1,7 @@
+# Resultados intermedios: se regeneran con los scripts 01-07 (ver README)
+*/resultados/
+comparativa/comparativa.pkl
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

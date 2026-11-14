@@ -1,0 +1,27 @@
+% Rendimiento y calibración de los modelos (conjunto de test).
+% Generado por comparativa/tablas_memoria.py a partir de los resultados guardados; no editar a mano.
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3.6pt}
+\caption[Rendimiento y calibración de los modelos]{Hiperparámetros seleccionados y
+métricas de clasificación y calibración de los cuatro modelos sobre el conjunto de test.
+Las flechas indican si un valor mayor ($\uparrow$) o menor ($\downarrow$) es mejor.}
+\label{tab:metricasModelos}
+\begin{tabular}{@{}l cc ccc ccc@{}}
+\toprule
+ & \multicolumn{2}{c}{Hiperparámetros}
+ & \multicolumn{3}{c}{Clasificación}
+ & \multicolumn{3}{c}{Calibración} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-6} \cmidrule(l){7-9}
+Conjunto & $\alpha$ & $\lambda_{L^2}$
+ & Exact.\,$\uparrow$ & \acs{AUC}\,$\uparrow$ & F1\,$\uparrow$
+ & \acs{BCE}\,$\downarrow$ & Brier\,$\downarrow$ & \acs{ECE}\,$\downarrow$ \\
+\midrule
+\textit{Breast Cancer} & $10^{-2}$ & $10^{-2}$ & 0.982 & 0.997 & 0.976 & 0.068 & 0.017 & 0.023 \\
+\textit{MAGIC} & $10^{-2}$ & $0$ & 0.877 & 0.931 & 0.808 & 0.307 & 0.093 & 0.025 \\
+\textit{Adult} & $10^{-3}$ & $0$ & 0.850 & 0.909 & 0.678 & 0.318 & 0.103 & 0.010 \\
+\textit{HIGGS} & $10^{-3}$ & $0$ & 0.708 & 0.785 & 0.727 & 0.561 & 0.190 & 0.030 \\
+\bottomrule
+\end{tabular}
+\end{table}

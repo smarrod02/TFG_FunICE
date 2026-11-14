@@ -1,0 +1,48 @@
+% AUC simétrico de las puntuaciones frente a la clase.
+% Generado por comparativa/tablas_memoria.py a partir de los resultados guardados; no editar a mano.
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\caption[Capacidad discriminante de las componentes]{\acs{AUC} simétrico,
+$\max(\mathrm{AUC},\, 1-\mathrm{AUC})$, de los \textit{scores} de cada componente principal
+funcional frente a la clase real. Un valor de 0.5 indica que la componente no separa las
+clases y un valor de 1, que las separa perfectamente. En negrita, la componente con mayor
+\acs{AUC} de cada variable y escala.}
+\label{tab:aucComponentes}
+\begin{tabular}{@{}l ccc ccc@{}}
+\toprule
+ & \multicolumn{3}{c}{Probabilidad} & \multicolumn{3}{c}{Logit} \\
+\cmidrule(lr){2-4} \cmidrule(l){5-7}
+Variable & $\xi_1$ & $\xi_2$ & $\xi_3$ & $\xi_1$ & $\xi_2$ & $\xi_3$ \\
+\midrule
+\multicolumn{7}{@{}l}{\textit{Breast Cancer} \quad {\scriptsize(\acs{AUC} del modelo: 0.997)}} \\
+\texttt{worst texture} & 0.63 & \textbf{0.93} & 0.71 & 0.81 & \textbf{0.89} & 0.74 \\
+\texttt{mean concave points} & 0.53 & \textbf{0.96} & 0.53 & 0.76 & \textbf{0.93} & 0.68 \\
+\texttt{worst radius} & 0.56 & \textbf{0.97} & 0.53 & \textbf{0.79} & 0.55 & 0.69 \\
+\texttt{worst area} & 0.62 & \textbf{0.93} & 0.51 & \textbf{0.85} & 0.55 & 0.72 \\
+\texttt{worst symmetry} & 0.53 & \textbf{0.91} & 0.53 & 0.81 & \textbf{0.82} & 0.59 \\
+\addlinespace[3pt]
+\multicolumn{7}{@{}l}{\textit{MAGIC} \quad {\scriptsize(\acs{AUC} del modelo: 0.931)}} \\
+\texttt{fAlpha} & 0.61 & \textbf{0.71} & 0.59 & 0.57 & 0.51 & \textbf{0.69} \\
+\texttt{fWidth} & 0.70 & \textbf{0.88} & 0.62 & \textbf{0.75} & 0.63 & 0.55 \\
+\texttt{fLength} & 0.62 & \textbf{0.82} & 0.51 & 0.57 & 0.63 & \textbf{0.78} \\
+\texttt{fSize} & 0.59 & \textbf{0.78} & 0.55 & 0.65 & \textbf{0.76} & 0.51 \\
+\texttt{fConc} & 0.67 & \textbf{0.80} & 0.57 & \textbf{0.71} & 0.68 & 0.56 \\
+\addlinespace[3pt]
+\multicolumn{7}{@{}l}{\textit{Adult} \quad {\scriptsize(\acs{AUC} del modelo: 0.909)}} \\
+\texttt{age} & \textbf{0.84} & 0.60 & 0.56 & \textbf{0.79} & 0.53 & 0.58 \\
+\texttt{capital-gain} & 0.55 & \textbf{0.84} & 0.53 & \textbf{0.76} & 0.57 & 0.58 \\
+\texttt{education-num} & \textbf{0.83} & 0.52 & 0.57 & \textbf{0.81} & 0.58 & 0.63 \\
+\texttt{hours-per-week} & \textbf{0.84} & 0.64 & 0.50 & \textbf{0.89} & 0.55 & 0.59 \\
+\texttt{capital-loss} & \textbf{0.74} & 0.64 & 0.51 & \textbf{0.69} & 0.50 & 0.56 \\
+\addlinespace[3pt]
+\multicolumn{7}{@{}l}{\textit{HIGGS} \quad {\scriptsize(\acs{AUC} del modelo: 0.785)}} \\
+\texttt{m\_wwbb} & 0.55 & \textbf{0.63} & 0.56 & \textbf{0.58} & 0.54 & 0.55 \\
+\texttt{m\_bb} & \textbf{0.66} & 0.58 & 0.58 & \textbf{0.67} & 0.60 & 0.57 \\
+\texttt{m\_wbb} & 0.55 & \textbf{0.68} & 0.56 & 0.57 & \textbf{0.63} & 0.60 \\
+\texttt{m\_jjj} & 0.64 & \textbf{0.65} & 0.51 & 0.53 & 0.53 & \textbf{0.62} \\
+\texttt{jet\_1\_pt} & 0.53 & \textbf{0.68} & 0.52 & \textbf{0.62} & 0.50 & 0.52 \\
+\bottomrule
+\end{tabular}
+\end{table}

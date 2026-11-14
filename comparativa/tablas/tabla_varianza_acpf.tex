@@ -1,0 +1,47 @@
+% Varianza explicada por el ACPF (%).
+% Generado por comparativa/tablas_memoria.py a partir de los resultados guardados; no editar a mano.
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\caption[Varianza explicada por el ACPF]{Porcentaje de varianza explicada por las
+componentes principales funcionales de las curvas \acs{ICE} centradas, en cada escala:
+primera ($\rho_1$) y segunda ($\rho_2$) componente, y varianza acumulada por las $M=3$
+componentes retenidas ($\rho_1+\rho_2+\rho_3$).}
+\label{tab:varianzaACPF}
+\begin{tabular}{@{}l ccc ccc@{}}
+\toprule
+ & \multicolumn{3}{c}{Probabilidad} & \multicolumn{3}{c}{Logit} \\
+\cmidrule(lr){2-4} \cmidrule(l){5-7}
+Variable & $\rho_1$ & $\rho_2$ & $\sum_{k\le 3}\rho_k$ & $\rho_1$ & $\rho_2$ & $\sum_{k\le 3}\rho_k$ \\
+\midrule
+\multicolumn{7}{@{}l}{\textit{Breast Cancer}} \\
+\texttt{worst texture} & 91.0 & 7.6 & 99.8 & 94.7 & 4.3 & 99.9 \\
+\texttt{mean concave points} & 91.9 & 7.4 & 99.9 & 93.0 & 6.5 & 99.9 \\
+\texttt{worst radius} & 93.5 & 5.7 & 99.9 & 94.0 & 5.6 & 99.9 \\
+\texttt{worst area} & 93.0 & 6.5 & 99.9 & 94.8 & 4.7 & 99.9 \\
+\texttt{worst symmetry} & 90.2 & 8.6 & 99.9 & 91.8 & 7.5 & 99.9 \\
+\addlinespace[3pt]
+\multicolumn{7}{@{}l}{\textit{MAGIC}} \\
+\texttt{fAlpha} & 89.1 & 7.9 & 99.0 & 98.2 & 1.1 & 99.8 \\
+\texttt{fWidth} & 67.8 & 18.1 & 93.4 & 96.9 & 1.7 & 99.5 \\
+\texttt{fLength} & 81.1 & 15.6 & 98.7 & 90.6 & 7.2 & 99.0 \\
+\texttt{fSize} & 63.6 & 26.7 & 95.7 & 93.0 & 6.0 & 99.5 \\
+\texttt{fConc} & 87.1 & 9.9 & 99.0 & 96.2 & 2.8 & 99.6 \\
+\addlinespace[3pt]
+\multicolumn{7}{@{}l}{\textit{Adult}} \\
+\texttt{age} & 95.3 & 2.3 & 99.3 & 93.4 & 5.4 & 99.5 \\
+\texttt{capital-gain} & 80.6 & 17.5 & 99.1 & 89.5 & 6.5 & 98.4 \\
+\texttt{education-num} & 96.1 & 3.1 & 99.7 & 97.2 & 1.9 & 99.7 \\
+\texttt{hours-per-week} & 95.4 & 3.7 & 99.6 & 96.9 & 2.4 & 99.7 \\
+\texttt{capital-loss} & 97.1 & 2.4 & 99.8 & 96.4 & 2.9 & 99.8 \\
+\addlinespace[3pt]
+\multicolumn{7}{@{}l}{\textit{HIGGS}} \\
+\texttt{m\_wwbb} & 81.6 & 14.7 & 98.3 & 94.2 & 3.9 & 99.2 \\
+\texttt{m\_bb} & 55.3 & 31.5 & 93.7 & 71.8 & 20.6 & 96.6 \\
+\texttt{m\_wbb} & 84.3 & 11.5 & 97.6 & 90.6 & 6.8 & 98.5 \\
+\texttt{m\_jjj} & 82.2 & 12.8 & 97.3 & 89.3 & 7.2 & 98.2 \\
+\texttt{jet\_1\_pt} & 90.0 & 7.6 & 99.1 & 93.9 & 4.1 & 99.3 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,46 @@
+% Capacidad discriminante del punto de partida.
+% Generado por comparativa/tablas_memoria.py a partir de los resultados guardados; no editar a mano.
+\begin{table}[htbp]
+\centering
+\footnotesize
+\caption[Capacidad discriminante del punto de partida]{Capacidad discriminante del punto
+de partida $z_{0i}$ de cada variable: \acs{AUC} de $z_{0i}$ frente a la clase real,
+fracción recuperada de la capacidad discriminante del modelo,
+$(\mathrm{AUC}_{z_0}-0.5)/(\mathrm{AUC}_{\text{modelo}}-0.5)$, y correlación de Pearson
+entre $z_{0i}$ y el logit $\hat\eta_i$ predicho por el modelo. El \acs{AUC} del modelo se
+calcula sobre la misma muestra de instancias empleada para construir las curvas \acs{ICE}.}
+\label{tab:aucPuntoPartida}
+\begin{tabular}{@{}l ccc@{}}
+\toprule
+Variable & $\mathrm{AUC}_{z_0}$ & Fracción recuperada & $\mathrm{corr}(z_0, \hat\eta)$ \\
+\midrule
+\multicolumn{4}{@{}l}{\textit{Breast Cancer} \quad {\scriptsize(\acs{AUC} del modelo: 0.997)}} \\
+\texttt{worst texture} & 0.994 & 0.99 & 0.99 \\
+\texttt{mean concave points} & 0.995 & 1.00 & 1.00 \\
+\texttt{worst radius} & 0.995 & 1.00 & 1.00 \\
+\texttt{worst area} & 0.996 & 1.00 & 1.00 \\
+\texttt{worst symmetry} & 0.989 & 0.98 & 0.99 \\
+\addlinespace[3pt]
+\multicolumn{4}{@{}l}{\textit{MAGIC} \quad {\scriptsize(\acs{AUC} del modelo: 0.941)}} \\
+\texttt{fAlpha} & 0.835 & 0.76 & 0.87 \\
+\texttt{fWidth} & 0.804 & 0.69 & 0.65 \\
+\texttt{fLength} & 0.887 & 0.88 & 0.89 \\
+\texttt{fSize} & 0.825 & 0.74 & 0.82 \\
+\texttt{fConc} & 0.889 & 0.88 & 0.96 \\
+\addlinespace[3pt]
+\multicolumn{4}{@{}l}{\textit{Adult} \quad {\scriptsize(\acs{AUC} del modelo: 0.917)}} \\
+\texttt{age} & 0.892 & 0.94 & 0.96 \\
+\texttt{capital-gain} & 0.894 & 0.95 & 0.98 \\
+\texttt{education-num} & 0.886 & 0.93 & 0.95 \\
+\texttt{hours-per-week} & 0.928 & 1.03 & 0.97 \\
+\texttt{capital-loss} & 0.917 & 1.00 & 1.00 \\
+\addlinespace[3pt]
+\multicolumn{4}{@{}l}{\textit{HIGGS} \quad {\scriptsize(\acs{AUC} del modelo: 0.762)}} \\
+\texttt{m\_wwbb} & 0.642 & 0.54 & 0.53 \\
+\texttt{m\_bb} & 0.715 & 0.82 & 0.65 \\
+\texttt{m\_wbb} & 0.699 & 0.76 & 0.54 \\
+\texttt{m\_jjj} & 0.728 & 0.87 & 0.86 \\
+\texttt{jet\_1\_pt} & 0.745 & 0.94 & 0.92 \\
+\bottomrule
+\end{tabular}
+\end{table}

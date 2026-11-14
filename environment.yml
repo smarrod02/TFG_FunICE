@@ -1,0 +1,18 @@
+name: tfg-skfda
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - scikit-fda==0.10.1
+      - multimethod==1.12
+      - numpy==2.4.6
+      - pandas==3.0.5
+      - scipy==1.17.1
+      - scikit-learn==1.9.0
+      - matplotlib==3.11.1
+      - seaborn==0.13.2
+      - joblib==1.6.0
+      - torch==2.14.0
+      - shap==0.51.0

@@ -1,0 +1,52 @@
+% Variables seleccionadas mediante SHAP.
+% Generado por comparativa/tablas_memoria.py a partir de los resultados guardados; no editar a mano.
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\caption[Variables seleccionadas mediante SHAP]{Variables seleccionadas mediante \acs{SHAP}
+para la construcción de las curvas \acs{ICE}, ordenadas por su importancia global $I_j$
+(media del valor absoluto de \acs{SHAP}, en unidades de logit).}
+\label{tab:variablesSHAP}
+\begin{tabularx}{\linewidth}{@{}c l >{\raggedright\arraybackslash}X r@{}}
+\toprule
+ & Variable & Descripción & $I_j$ \\
+\midrule
+\multicolumn{4}{@{}l}{\textit{Breast Cancer}} \\
+1 & \texttt{worst texture} & Textura (desviación típica de los niveles de gris), peor valor\textsuperscript{$\dagger$} & 0.895 \\
+2 & \texttt{mean concave points} & Número de concavidades del contorno, media & 0.685 \\
+3 & \texttt{worst radius} & Radio del núcleo, peor valor & 0.553 \\
+4 & \texttt{worst area} & Área del núcleo, peor valor & 0.518 \\
+5 & \texttt{worst symmetry} & Simetría del núcleo, peor valor & 0.498 \\
+\addlinespace[3pt]
+\multicolumn{4}{@{}l}{\textit{MAGIC}} \\
+1 & \texttt{fAlpha} & Ángulo del eje mayor de la elipse respecto al origen & 1.261 \\
+2 & \texttt{fWidth} & Eje menor de la elipse & 0.984 \\
+3 & \texttt{fLength} & Eje mayor de la elipse & 0.792 \\
+4 & \texttt{fSize} & Logaritmo de la intensidad total de la imagen & 0.748 \\
+5 & \texttt{fConc} & Fracción de la intensidad en los dos píxeles más brillantes & 0.535 \\
+\addlinespace[3pt]
+\multicolumn{4}{@{}l}{\textit{Adult}\textsuperscript{$*$}} \\
+1 & \texttt{age} & Edad & 0.790 \\
+2 & \texttt{capital-gain} & Ganancias de capital & 0.730 \\
+3 & \texttt{education-num} & Nivel educativo (numérico) & 0.588 \\
+4 & \texttt{hours-per-week} & Horas trabajadas por semana & 0.480 \\
+5 & \texttt{capital-loss} & Pérdidas de capital & 0.127 \\
+\addlinespace[3pt]
+\multicolumn{4}{@{}l}{\textit{HIGGS}} \\
+1 & \texttt{m\_wwbb} & Masa invariante del sistema $WWbb$ & 0.613 \\
+2 & \texttt{m\_bb} & Masa invariante de los dos \textit{jets} $b$ & 0.521 \\
+3 & \texttt{m\_wbb} & Masa invariante del sistema $Wbb$ & 0.483 \\
+4 & \texttt{m\_jjj} & Masa invariante de tres \textit{jets} & 0.244 \\
+5 & \texttt{jet\_1\_pt} & Momento transverso del primer \textit{jet} & 0.216 \\
+\bottomrule
+\multicolumn{4}{@{}>{\raggedright\arraybackslash}p{\linewidth}@{}}{\scriptsize
+\textsuperscript{$\dagger$}En \textit{Breast Cancer}, cada característica se mide sobre
+todos los núcleos de la imagen; la \emph{media} es su promedio y el \emph{peor valor}, la
+media de los tres valores más altos.} \\
+\multicolumn{4}{@{}>{\raggedright\arraybackslash}p{\linewidth}@{}}{\scriptsize
+\textsuperscript{$*$}Solo se consideran las variables continuas. Las variables categóricas
+codificadas en \textit{one-hot} quedan excluidas aunque tengan mayor importancia
+(p.\,ej., \texttt{marital-status\_Married-civ-spouse}, tercera en la ordenación global).}
+\end{tabularx}
+\end{table}

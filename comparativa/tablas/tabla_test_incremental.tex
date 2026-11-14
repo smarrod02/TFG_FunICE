@@ -1,0 +1,50 @@
+% Test incremental.
+% Generado por comparativa/tablas_memoria.py a partir de los resultados guardados; no editar a mano.
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\caption[Aporte incremental de las componentes]{\acs{AUC} por validación cruzada
+estratificada ($5\times5$) de la regresión logística que utiliza únicamente el punto de
+partida (M0) y de la que incorpora además las puntuaciones de las tres componentes (M2),
+incremento $\Delta\mathrm{AUC} = \mathrm{AUC}_{M2} - \mathrm{AUC}_{M0}$ y p-valor del
+contraste de permutación (200 permutaciones; valor mínimo alcanzable, 0.005). El modelo M0
+es común a ambas escalas. En negrita, los incrementos significativos ($p < 0.05$).}
+\label{tab:testIncremental}
+\begin{tabular}{@{}l c ccc ccc@{}}
+\toprule
+& & \multicolumn{3}{c}{Probabilidad} & \multicolumn{3}{c}{Logit} \\
+\cmidrule(lr){3-5} \cmidrule(l){6-8}
+Variable & $\mathrm{AUC}_{M0}$ & $\mathrm{AUC}_{M2}$ & $\Delta\mathrm{AUC}$ & $p$
+& $\mathrm{AUC}_{M2}$ & $\Delta\mathrm{AUC}$ & $p$ \\
+\midrule
+\multicolumn{8}{@{}l}{\textit{Breast Cancer}} \\
+\texttt{worst texture} & 0.995 & 0.970 & $-0.025$ & 0.995 & 0.965 & $-0.030$ & 1.000 \\
+\texttt{mean concave points} & 0.995 & 0.974 & $-0.021$ & 1.000 & 0.980 & $-0.014$ & 0.990 \\
+\texttt{worst radius} & 0.995 & 0.958 & $-0.037$ & 1.000 & 0.975 & $-0.019$ & 0.990 \\
+\texttt{worst area} & 0.996 & 0.973 & $-0.023$ & 1.000 & 0.977 & $-0.019$ & 0.990 \\
+\texttt{worst symmetry} & 0.988 & 0.959 & $-0.029$ & 1.000 & 0.975 & $-0.012$ & 0.950 \\
+\addlinespace[3pt]
+\multicolumn{8}{@{}l}{\textit{MAGIC}} \\
+\texttt{fAlpha} & 0.838 & 0.843 & $\mathbf{+0.005}$ & \textbf{0.020} & 0.840 & $\mathbf{+0.001}$ & \textbf{0.040} \\
+\texttt{fWidth} & 0.804 & 0.891 & $\mathbf{+0.087}$ & \textbf{0.005} & 0.854 & $\mathbf{+0.051}$ & \textbf{0.005} \\
+\texttt{fLength} & 0.888 & 0.914 & $\mathbf{+0.027}$ & \textbf{0.005} & 0.920 & $\mathbf{+0.032}$ & \textbf{0.005} \\
+\texttt{fSize} & 0.825 & 0.861 & $\mathbf{+0.036}$ & \textbf{0.005} & 0.844 & $\mathbf{+0.019}$ & \textbf{0.005} \\
+\texttt{fConc} & 0.887 & 0.902 & $\mathbf{+0.015}$ & \textbf{0.010} & 0.908 & $\mathbf{+0.021}$ & \textbf{0.005} \\
+\addlinespace[3pt]
+\multicolumn{8}{@{}l}{\textit{Adult}} \\
+\texttt{age} & 0.890 & 0.896 & $\mathbf{+0.006}$ & \textbf{0.030} & 0.892 & $+0.002$ & 0.109 \\
+\texttt{capital-gain} & 0.892 & 0.889 & $-0.002$ & 0.159 & 0.882 & $-0.010$ & 0.612 \\
+\texttt{education-num} & 0.888 & 0.883 & $-0.005$ & 0.219 & 0.887 & $-0.001$ & 0.114 \\
+\texttt{hours-per-week} & 0.929 & 0.922 & $-0.007$ & 0.597 & 0.923 & $-0.006$ & 0.512 \\
+\texttt{capital-loss} & 0.915 & 0.906 & $-0.009$ & 0.677 & 0.908 & $-0.007$ & 0.478 \\
+\addlinespace[3pt]
+\multicolumn{8}{@{}l}{\textit{HIGGS}} \\
+\texttt{m\_wwbb} & 0.642 & 0.630 & $-0.012$ & 0.214 & 0.623 & $-0.018$ & 0.323 \\
+\texttt{m\_bb} & 0.716 & 0.727 & $\mathbf{+0.011}$ & \textbf{0.040} & 0.724 & $+0.008$ & 0.055 \\
+\texttt{m\_wbb} & 0.696 & 0.744 & $\mathbf{+0.048}$ & \textbf{0.005} & 0.734 & $\mathbf{+0.037}$ & \textbf{0.005} \\
+\texttt{m\_jjj} & 0.730 & 0.749 & $\mathbf{+0.019}$ & \textbf{0.010} & 0.728 & $-0.001$ & 0.070 \\
+\texttt{jet\_1\_pt} & 0.749 & 0.739 & $-0.010$ & 0.378 & 0.728 & $-0.021$ & 0.781 \\
+\bottomrule
+\end{tabular}
+\end{table}
